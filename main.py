@@ -1,16 +1,33 @@
-# This is a sample Python script.
+#Author: Nikitas Rigas Kalogeropoulos
+#This is a python sorting algorithms visualization tool done for exercise purpose
+import pygame
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#init pygame
+pygame.init()
+
+#grid dimentions width*width
+width = 600
+screen = pygame.display.set_mode((width, width))
+caption= pygame.display.set_caption('SAV: Sorting Algorithm Visualization')
+
+#Colors RGB:
+black = (0,0,0)
+white = (255,255,255)
+blue = (0,0,255)
+yellow = (255,255,0)
+
+background_colour = (192,192,192)
+
+screen.fill(background_colour)
+pygame.display.flip()
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+#main loop
+exit_flag = True
+while exit_flag:
+    #Handling pressing X event
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+             exit_flag = False
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('eleos')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
