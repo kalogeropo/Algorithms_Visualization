@@ -39,9 +39,15 @@ while run:
         if menu>0:
             main_menu = False
     else:
-        if menu == 2:#TODO: Implement a sub menu for more sorting algorithms
+        # TODO: Implement Sorting algorithms
+        # TODO: Screen for width and rows inputs
+        # TODO: Implement a sub menu for more sorting algorithms
+        if menu == 2:
             print("Sorting")
-        if menu == 1: #TODO: Implement a sub menu for more pathfinding algorithms
+        # TODO: Implement a sub menu for more pathfinding algorithms
+        # TODO: Screen for width and rows inputs
+        if menu == 1:
+            print("Sorting")
             print("Path Finding Algorithms")
             pygame_window = pygame.display.set_mode((WIDTH, WIDTH))
             pygame.display.set_caption("A - star")
